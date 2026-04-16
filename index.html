@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Abdullahil Baki - Writer, Translator, and Programmer proficient in TypeScript, PHP, Go, and C++.">
+    <title>Abdullahil Baki</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #ffffff;
+            --text: #1a1a1a;
+            --accent: #2563eb;
+            --secondary: #64748b;
+            --light-gray: #f8fafc;
+            --hover-bg: #c0dbef;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif, "Noto Serif Bengali";
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            letter-spacing: -1px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--secondary);
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--light-gray);
+            padding-bottom: 8px;
+            margin-bottom: 20px;
+            color: var(--accent);
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .contact-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .contact-links a:hover {
+            color: var(--accent);
+            text-decoration: underline;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--light-gray);
+            text-decoration: none;
+            color: var(--text);
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            background: var(--hover-bg);
+            transform: translateY(-2px);
+        }
+
+        .bn {
+            display: block;
+            margin-top: 5px;
+            color: var(--secondary);
+        }
+
+        .edu-item,
+        .lang-item {
+            margin-bottom: 15px;
+        }
+
+        .date {
+            font-size: 0.85rem;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #e2e8f0;
+            text-decoration: none;
+            color: var(--text);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 4px;
+        }
+
+        .tag:hover {
+            background: var(--hover-bg);
+        }
+
+        footer {
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--secondary);
+            margin-top: 100px;
+            padding-bottom: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <h1>ABDULLAHIL BAKI</h1>
+            <div class="subtitle">Writer &bull; Programmer</div>
+
+            <div class="contact-links">
+                <a href="mailto:abdullahalbaqi00@gmail.com" rel="noopener noreferrer" target="_blank">Email</a>
+                <a href="https://github.com/abdullahilbaki" rel="noopener noreferrer" target="_blank">GitHub</a>
+                <a href="https://fateh24.com/?s=%E0%A6%86%E0%A6%AC%E0%A6%A6%E0%A7%81%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%B2+%E0%A6%AC%E0%A6%BE%E0%A6%95%E0%A6%BF"
+                    rel="noopener noreferrer" target="_blank">Fateh24</a>
+                <a href="https://www.prothomalo.com/search?q=%E0%A6%86%E0%A6%AC%E0%A6%A6%E0%A7%81%E0%A6%B2%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%B9%E0%A6%BF%E0%A6%B2+%E0%A6%AC%E0%A6%BE%E0%A6%95%E0%A6%BF&type=text%2Cteam-bio%2Clisticle%2C&section-id=22328%2C22349%2C22350%2C22351%2C22352"
+                    rel="noopener noreferrer" target="_blank">Prothom Alo</a>
+            </div>
+        </header>
+
+        <section id="tech-stack">
+            <h2>Skills & Languages</h2>
+            <p><strong>Programming:</strong>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.typescriptlang.org/"
+                    class="tag">TypeScript</a>
+                <a rel="noopener noreferrer" target="_blank" href="https://cppreference.com/" class="tag">C++</a>
+                <a rel="noopener noreferrer" target="_blank" href="https://go.dev/" class="tag">Go</a>
+                <a rel="noopener noreferrer" target="_blank" href="https://www.php.net/" class="tag">PHP</a>
+            </p>
+            <p><strong>Natural Languages:</strong>
+                Bangla, Arabic, English
+            </p>
+        </section>
+
+        <section id="translations">
+            <h2>Translated Books</h2>
+            <div class="grid">
+                <a href="https://www.rokomari.com/book/256378/chikitsha-bigganer-itihash" rel="noopener noreferrer"
+                    target="_blank" class="card">
+                    <strong>History of Medicine in Islamic Civilization</strong>
+                    <span class="bn">ইসলামি সভ্যতায় চিকিৎসা বিজ্ঞানের ইতিহাস</span>
+                </a>
+                <a href="https://www.rokomari.com/book/222124/belaler-atmaswar" rel="noopener noreferrer"
+                    target="_blank" class="card">
+                    <strong>The Voice of Bilal (RA)</strong>
+                    <span class="bn">বেলালের আত্মস্বর</span>
+                </a>
+                <a href="https://www.rokomari.com/book/229118/nastik-bandhur-mukhomukhi" rel="noopener noreferrer"
+                    target="_blank" class="card">
+                    <strong>Dialogue with an Atheist</strong>
+                    <span class="bn">নাস্তিক বন্ধুর মুখোমুখি</span>
+                </a>
+                <a href="https://www.rokomari.com/book/472756/badiuzzaman-said-nursi" rel="noopener noreferrer"
+                    target="_blank" class="card">
+                    <strong>The Authorised Biography, Bediuzzaman Said Nursi</strong>
+                    <span class="bn">বদিউজ্জামান সাঈদ নূরসী: জীবন ও দর্শন</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="edu-item">
+                <div class="date">2019 – 2020</div>
+                <strong>Research Fellowship: Comparative Religion & Dawah</strong><br>
+                Jamiatul Uloomil Islamia Dhaka
+            </div>
+            <div class="edu-item">
+                <div class="date">2018 – 2019</div>
+                <strong>Takmil (Masters in Islamic Studies)</strong><br>
+                Jamiatul Uloomil Islamia Dhaka
+            </div>
+        </section>
+
+        <section id="hobbies">
+            <h2>Hobbies</h2>
+            <p>When I'm not writing or coding, I enjoy reading, cooking, exploring nature, and playing games.</p>
+        </section>
+
+        <footer>
+            &copy; <span id="year"></span> Abdullahil Baki.
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
